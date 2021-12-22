@@ -32,7 +32,7 @@ progress.addEventListener('input', function() {
 *********
 
 ### Education
-#### School and now studying at the university
+#### School and now studying at the university (BSUIR)
 *********
 
 ### English level:
