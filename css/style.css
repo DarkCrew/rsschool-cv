@@ -1,0 +1,399 @@
+html {
+    scroll-behavior: smooth;
+}
+
+a:active, /* активная/посещенная ссылка */
+a:hover,  /* при наведении */
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+/*.....HEADER-START.....*/
+
+.header{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    z-index: 1000;
+}
+
+.header-container{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.header-name{
+    width: 33%;
+    font-size: 40px;
+    font-family: "DrukCyr-Bold";
+    text-align: center;
+    word-spacing: 7px;
+    user-select: none;
+}
+
+.header-nav{
+    width: 55%;
+}
+
+.header-nav ul{
+    display: flex;
+    color: #FFFFFF;
+    justify-content: space-between;
+}
+
+.header-nav ul li a{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: "Roboto-Regular";
+    transition: 1s;
+    cursor: pointer;
+}
+
+.header-nav ul li a:hover{
+    color: #ffa500;
+}
+
+/*.....HEADER-END.....*/
+
+/*.....MAIN-START.....*/
+
+.main{
+    height: 100%;
+}
+
+.subtitle{
+    font-size: 30px;
+    color: #000000;
+    font-family: "Roboto-Light";
+}
+
+
+/*.....WELCOME-START.....*/
+
+.welcome{
+    height: 100vh;
+    background-color: #000000;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.welcome-left-side{
+    height: 100%;
+    width: 40%;
+    background-color: #ffa500;
+    position: absolute;
+}
+
+.welcome-container{
+    height: calc(100% - 100px);
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.myPhoto{
+    position: absolute;
+    height: 85%;
+    bottom: 0;
+    right: -100px;
+}
+
+.myPhoto img{
+    height: 100%;
+}
+
+.welcome-right-info{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    user-select: none;
+}
+
+.welcome-line{
+    display: flex;
+    justify-content: space-between;
+    height: 5px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.welcome-subline{
+    height: 100%;
+    width: 30px;
+    background-color: #ffa500;
+}
+
+.welcome-right-title{
+    font-size: 55px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: "Roboto-Regular";
+    margin-bottom: 30px;
+}
+
+.welcome-right-subtitle{
+    font-size: 25px;
+    color: #FFFFFF;
+    font-family: "Roboto-Light";
+    margin-bottom: 50px;
+}
+
+.welcome-button{
+    height: 70px;
+    width: 250px;
+    background-color: #ffa500;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: "Roboto-Bold";
+    font-size: 30px;
+    color: #0c0024;
+    border: none;
+    outline: none;
+    transition: 1s;
+}
+
+.welcome-button:hover{
+    background-color: #ffa600a9;
+}
+
+/*.....WELCOME-END.....*/
+
+
+/*.....ABOUT-ME-START.....*/
+
+.about-me{
+    background-color: #FFFFFF;
+}
+
+.about-me-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 160px;
+}
+
+.title-container{
+    font-size: 55px;
+    color: #000000;
+    font-family: "Roboto-Regular";
+    padding-bottom: 60px;
+}
+
+.title-container span{
+    color: #ffa500;
+}
+
+/*.....ABOUT-ME-END.....*/
+
+
+/*.....SKILLS-START.....*/
+
+.skills{
+    background-color: #000000;
+}
+
+.skills-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0;
+}
+
+.light{
+    color: #FFFFFF;
+}
+
+.title-container span{
+    color: #ffa500;
+}
+
+.skill-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.skill-item{
+    display: flex;
+    min-height: 100px;
+    width: 33%;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    padding-left: 150px;
+    align-items: center;
+    font-size: 30px;
+    font-family: "Roboto-Regular";
+    margin-bottom: 50px;
+    color: #FFFFFF;
+}
+
+.skill-java{
+    background-image: url(/assets/img/java.png);
+}
+
+.skill-cPlusPlus{
+    background-image: url(/assets/img/cPlusPlus.png);
+}
+
+.skill-html{
+    background-image: url(/assets/img/html.png);
+}
+
+.skill-css{
+    background-image: url(/assets/img/css.png);
+}
+
+.skill-javascript{
+    background-image: url(/assets/img/js.png);
+}
+
+.skill-figma{
+    background-image: url(/assets/img/figma.png);
+}
+
+/*.....SKILLS-END.....*/
+
+
+/*.....EXPERIENCE-START.....*/
+
+.experience{
+    background-color: #acacac;
+}
+
+
+.experience-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0;
+}
+
+/*.....EXPERIENCE-END.....*/
+
+
+
+/*.....EDUCATION-START.....*/
+
+.education{
+    background-color: #000000;
+}
+
+.education-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0;
+}
+
+/*.....EDUCATION-END.....*/
+
+
+
+/*.....MAIN-END.....*/
+
+
+
+/*.....FOOTER-START.....*/
+
+.footer{
+    background-color: #ffa500;
+}
+
+.footer-container{
+    padding: 40px 0;
+    width: 90%;
+}
+
+.footer-link-elements{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-icon{
+    height: 50px;
+    width: 200px;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.github-link{
+    background-size: contain;
+    background-image: url(/assets/img/github.png);
+}
+
+.rs-school-link{
+    background-size: contain;
+    background-position: center;
+    background-image: url(/assets/svg/rs_school_js.svg);
+}
+
+.footer-create-date{
+    width: 200px;
+    font-size: 20px;
+    color: #000000;
+    font-family: "Roboto-Bold";
+    text-align: right;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+
+
+
+/*.....FOOTER-END.....*/
+
+
+@font-face {
+    font-family: "Forum-Regular";
+    src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Thin";
+    src: url(../assets/fonts/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Light";
+    src: url(../assets/fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(../assets/fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url(../assets/fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: "DrukCyr-Heavy";
+    src: url(../assets/fonts/DrukCyr-Heavy.ttf);
+}
+
+@font-face {
+    font-family: "DrukCyr-Bold";
+    src: url(../assets/fonts/DrukCyr-Bold.ttf);
+}

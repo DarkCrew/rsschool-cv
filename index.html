@@ -4,78 +4,135 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Kirill Kovalev</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./assets/cv-icon.ico">
 </head>
 <body>
-    <div class="title name">
-        <h1>Kirill Kovalev</h1>
-        <img alt="my-photo" src="./ava.jpg">
-    </div>
-    <div class="divider"></div>
+    <header class="header">
+        <div class="container header-container">
+            <div class="header-name">
+                <h1>Kirill Web Developer</h1>
+            </div>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#code">Code</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
 
-    <div class="title contacts">
-        <h2>Discord:</h2>
-        <h3>DarkCrew#4381</h3>
-    </div>
-    <div class="divider"></div>
+        <section class="welcome">
+            <div class="welcome-left-side">
+                <div class="myPhoto">
+                    <img src="./assets/img/myPhoto.png" alt="myPhoto">
+                </div>
+            </div>
+            <div class="container welcome-container">
+                <div class="welcome-right-info">
+                    <div class="welcome-line">
+                        <div class="welcome-subline"></div>
+                        <div class="welcome-subline"></div>
+                        <div class="welcome-subline"></div>
+                        <div class="welcome-subline"></div>
+                        <div class="welcome-subline"></div>
+                        <div class="welcome-subline"></div>
+                        <div class="welcome-subline"></div>
+                        <div class="welcome-subline"></div>
+                    </div>
+                    <p class="welcome-right-title">
+                        Future web</br> developer
+                    </p>
+                    <p class="welcome-right-subtitle">I am a future web developer,</br> motivated and always get</br> what I want.</p>
+                    <button class="welcome-button">contact me</button>
+                </div>
+            </div>
+        </section>
 
-    <div class="title about-me">
-        <h2>About me:</h2>
-        <h3>
-            Hello, I am a student of the
-            Belarusian State University
-            of Informatics and Radioelectronics.
-            My goal is to become a professional
-            front-end developer. Before that
-            I studied C ++, then switched to Java.
-            Studied for Android Developer.
-        </h3>
-    </div>
-    <div class="divider"></div>
+        <section class="about-me" id="about">
+            <div class="container about-me-container">
+                <div class="title-container">
+                    <h2>About <span>me</span></h2>
+                </div>
+                <h3 class="subtitle">
+                    Hello, I am a student of the Belarusian State University of Informatics and Radioelectronics.</br> 
+                    My goal is to become a professional front-end developer. Before that I studied C ++,</br> 
+                    then switched to Java. Studied for Android Developer.
+                </p>
+            </div>
+        </section>
 
-    <div class="title my-skills">
-        <h2>My skills:</h2>
-        <ul>
-            <li>C++</li>
-            <li>Java</li>
-            <li>Html</li>
-            <li>Css</li>
-            <li>JavaScript</li>
-        </ul>
-    </div>
-    <div class="divider"></div>
+        <section class="skills" id="skills">
+            <div class="container skills-container">
+                <div class="title-container light">
+                    <h2>Skills</h2>
+                </div>
+                <ul class="skill-list">
+                    <li class="skill-item skill-java">Java</li>
+                    <li class="skill-item skill-cPlusPlus">C++</li>
+                    <li class="skill-item skill-html">HTML</li>
+                    <li class="skill-item skill-css">Css</li>
+                    <li class="skill-item skill-javascript">JavaScript</li>
+                    <li class="skill-item skill-figma">Figma</li>
+                </ul>
+            </div>
+        </section>
 
-    <div class="title sample-code">
-        <h2>Sample code:</h2>
-        <pre>
-            <code>
-                const progress = document.querySelector('.progress');
-                progress.addEventListener('input', function() {
-                    const value = this.value;
-                    this.style.background = `linear-gradient(to right, #710707 0%, #710707 ${value}%, #fff ${value}%, white 100%)`
-                })
-            </code>
-        </pre>
-    </div>
-    <div class="divider"></div>
+        <section class="code" id="code">
+            <div class="container skills-container">
+                <div class="title-container">
+                    <h2>Code</h2>
+                </div>
+                <pre>
+                    <code>
+                        const progress = document.querySelector('.progress');
+progress.addEventListener('input', function() {
+  const value = this.value;
+  this.style.background = `linear-gradient(to right, #710707 0%, #710707 ${value}%, 
+  #fff ${value}%, white 100%)`
+})
+                    </code>
+                </pre>
+            </div>
+        </section>
 
-    <div class="title experience-job">
-        <h2>Experience job</h2>
-        <h3>No experience in the company as a Front-end developer.</h3>
-    </div>
-    <div class="divider"></div>
+        <section class="experience" id="experience">
+            <div class="container experience-container">
+                <div class="title-container">
+                    <h2>Experience</h2>
+                </div>
+                <h3 class="subtitle">
+                    No experience in the company as a Front-end developer
+                </h3>
+            </div>
+        </section>
 
-    <div class="title education">
-        <h2>Education</h2>
-        <h3>School and now studying at the university (BSUIR).</h3>
-    </div>
-    <div class="divider"></div>
+        <section class="education" id="education">
+            <div class="container education-container">
+                <div class="title-container light">
+                    <h2>Education</h2>
+                </div>
+                <h3 class="subtitle light">
+                    School and now studying at the university (BSUIR)
+                </h3>
+            </div>
+        </section>
 
-    <div class="title english-level">
-        <h2>English level:</h2>
-        <h3>A2-B1.</h3>
-    </div>
-    <div class="divider"></div>
+    </main>
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-link-elements">
+                <a href="https://github.com/DarkCrew"><div class="footer-icon github-link"></div></a>
+                <a href="https://rs.school/js/"><div class="footer-icon rs-school-link"></div></a>
+                <p class="footer-create-date">Created in</br> 2021</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
