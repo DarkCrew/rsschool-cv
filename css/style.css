@@ -243,27 +243,27 @@ a {
 }
 
 .skill-java{
-    background-image: url(/assets/img/java.png);
+    background-image: url(../assets/img/java.png);
 }
 
 .skill-cPlusPlus{
-    background-image: url(/assets/img/cPlusPlus.png);
+    background-image: url(../assets/img/cPlusPlus.png);
 }
 
 .skill-html{
-    background-image: url(/assets/img/html.png);
+    background-image: url(../assets/img/html.png);
 }
 
 .skill-css{
-    background-image: url(/assets/img/css.png);
+    background-image: url(../assets/img/css.png);
 }
 
 .skill-javascript{
-    background-image: url(/assets/img/js.png);
+    background-image: url(../assets/img/js.png);
 }
 
 .skill-figma{
-    background-image: url(/assets/img/figma.png);
+    background-image: url(../assets/img/figma.png);
 }
 
 /*.....SKILLS-END.....*/
@@ -333,13 +333,13 @@ a {
 
 .github-link{
     background-size: contain;
-    background-image: url(/assets/img/github.png);
+    background-image: url(../assets/img/github.png);
 }
 
 .rs-school-link{
     background-size: contain;
     background-position: center;
-    background-image: url(/assets/svg/rs_school_js.svg);
+    background-image: url(../assets/svg/rs_school_js.svg);
 }
 
 .footer-create-date{
