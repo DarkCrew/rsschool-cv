@@ -289,7 +289,53 @@ a {
     width: 90%;
     display: flex;
     flex-direction: column;
-    padding: 80px 0;
+    padding-top: 80px;
+}
+
+.myworks-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4%;
+    width: 100%;
+}
+
+.work-item{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background: url(../assets/img/notebook.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 48%;
+    margin-bottom: 80px;
+    user-select: none;
+}
+
+.example-image{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.example-image img{
+    margin-top: 3%;
+    height: 77%;
+    width: 98%;
+    transition: 1s;
+    border-radius: 2%;
+}
+
+.example-image img:hover{
+    transform: scale(1.1);
+}
+
+.example-title{
+    position: absolute;
+    font-family: "Roboto-Bold";
+    text-transform: uppercase;
+    font-size: 25px;
+    bottom: -10px;
 }
 
 /*.....EXPERIENCE-END.....*/
@@ -303,6 +349,17 @@ a {
 }
 
 .education-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0;
+}
+
+.english{
+    background-color: #000000;
+}
+
+.english-container{
     width: 90%;
     display: flex;
     flex-direction: column;
