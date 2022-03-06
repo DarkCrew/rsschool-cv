@@ -318,6 +318,11 @@ a {
     cursor: pointer;
 }
 
+.example-image a{
+    display: flex;
+    justify-content: center;
+}
+
 .example-image img{
     margin-top: 3%;
     height: 77%;
