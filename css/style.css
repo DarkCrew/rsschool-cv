@@ -1,7 +1,3 @@
-html {
-    scroll-behavior: smooth;
-}
-
 a:active, /* активная/посещенная ссылка */
 a:hover,  /* при наведении */
 a {
