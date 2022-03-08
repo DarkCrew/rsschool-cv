@@ -539,6 +539,11 @@ a {
     .skill-item{
         width: 300px;
     }
+
+    .example-image img:hover{
+        transform: scale(1);
+    }
+
 }
 
 @media (max-width: 768px) {
