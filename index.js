@@ -9,7 +9,7 @@ function changeStateWelcomeMenu() {
     burgerMenuLines.classList.toggle('active');
     navigationMenu.classList.toggle('mobile');
     burgerMenu.classList.toggle('active');
-    document.body.style.overflow = 'hidden';
+    document.body.classList.toggle('lock');
 }
 
 if(window.innerWidth <= 1024){
