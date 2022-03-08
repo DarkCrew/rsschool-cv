@@ -63,6 +63,59 @@ a {
     color: #ffa500;
 }
 
+.burger-menu{
+    display: none;
+    position: relative;
+    width: 32px;
+    height: 18px;
+}
+
+.menu-btn{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu-icon,
+.menu-icon::before,
+.menu-icon::after{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #FFFFFF;
+}
+
+.menu-icon::before{
+    content: '';
+    top: -8px;
+}
+
+.menu-icon::after{
+    content: '';
+    top: 8px;
+}
+
+.menu-icon.active{
+    transform: rotate(45deg);
+}
+
+.menu-icon.active::before{
+    top: 0;
+    transform: rotate(0);
+}
+
+.menu-icon.active::after{
+    top: 0;
+    transform: rotate(90deg);
+}
+
 /*.....HEADER-END.....*/
 
 /*.....MAIN-START.....*/
@@ -96,6 +149,10 @@ a {
     position: absolute;
 }
 
+.welcome-info{
+    display: none;
+}
+
 .welcome-container{
     height: calc(100% - 100px);
     width: 90%;
@@ -113,10 +170,10 @@ a {
 .myPhoto{
     align-self: flex-end;
     height: 100%;
-}
-
-.myPhoto img{
-    height: 100%;
+    width: 400px;
+    background: url(../assets/img/myPhoto.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .welcome-right-info{
@@ -150,6 +207,7 @@ a {
 }
 
 .welcome-right-subtitle{
+    max-width: 330px;
     font-size: 25px;
     color: #FFFFFF;
     font-family: "Roboto-Light";
@@ -233,6 +291,7 @@ a {
 
 .skill-list{
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
 }
@@ -240,10 +299,10 @@ a {
 .skill-item{
     display: flex;
     min-height: 100px;
-    width: 33%;
+    width: 30%;
     background-size: 100px;
     background-repeat: no-repeat;
-    padding-left: 150px;
+    padding-left: 140px;
     align-items: center;
     font-size: 30px;
     font-family: "Roboto-Regular";
@@ -423,10 +482,223 @@ a {
     user-select: none;
 }
 
-
-
-
 /*.....FOOTER-END.....*/
+
+@media (max-width: 1024px) {
+    .welcome-line-divider{
+        display: none;
+    }
+
+    .myPhoto{
+        max-height: calc(100vh - 100px);
+    }
+
+    .myPhoto img{
+        max-height: 100%;
+    }
+
+    .burger-menu{
+        display: block;
+    }
+
+    .header-nav{
+        display: none;
+    }
+
+    .header-name{
+        font-size: 35px;
+    }
+
+    .welcome-right-info{
+        width: 270px;
+        margin-right: 0;
+    }
+
+    .welcome-right-title{
+        font-size: 45px;
+    }
+
+    .welcome-subline:last-child{
+        display: none;
+    }
+
+    .welcome-right-subtitle{
+        max-width: 230px;
+        font-size: 25px;
+    }
+
+    .welcome-right-info a{
+        width: 200px;
+    }
+
+    .welcome-button{
+        width: 200px;
+        font-size: 25px;
+    }
+
+    .skill-item{
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header-name{
+        display: none;
+    }
+
+    .welcome{
+        position: relative;
+        justify-content: flex-start;
+        background-color: #ffa500;
+    }
+
+    .welcome-container{
+        height: 100%;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    .welcome-left-side{
+        height: 40%;
+        width: 100%;
+        bottom: 0;
+        background-color: #000000;
+    }
+
+    .welcome-info{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 150px;
+        position: absolute;
+        margin-top: 150px;
+        font-size: 40px;
+        font-family: "DrukCyr-Bold";
+        text-align: center;
+        word-spacing: 7px;
+        user-select: none;
+        text-transform: up;
+    }
+
+    .welcome-info-name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+    .welcome-info-name h2{
+        width: 150px;
+    }
+
+    .welcome-info-profession{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+    .welcome-info-profession h2{
+        width: 150px;
+    }
+
+    .myPhoto{
+        height: calc(60% - 100px);
+        width: 100%;
+        background: url(../assets/img/myPhoto-mobile.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+    }
+
+    .welcome-right-info{
+        justify-content: center;
+        height: 40%;
+        width: 70%;
+    }
+
+    .welcome-right-title{
+        display: none;
+    }
+
+    .welcome-subline{
+        width: 8%;
+    }
+
+    .welcome-subline:last-child{
+        display: block;
+    }
+
+    .welcome-right-subtitle{
+        width: 100%;
+        max-width: none;
+        margin-bottom: 30px;
+    }
+
+    .welcome-right-subtitle{
+        text-align: center;
+    }
+
+    .welcome-right-info a{
+        margin: 0 auto;
+    }
+
+    .menu-icon, .menu-icon::before, .menu-icon::after{
+        background-color: #000000;
+    }
+
+    .skill-item{
+        width: 100%;
+    }
+
+    .work-item{
+        width: 100%;
+    }
+
+    .footer-icon{
+        height: 30px;
+        width: 120px;
+    }
+
+    .footer-create-date{
+        width: auto;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 500px) {
+    .welcome-info-name h2{
+        width: 100px;
+    }
+
+    .welcome-info-profession h2{
+        width: 100px;
+    }
+
+    .welcome-info{
+        gap: 130px;
+    }
+
+    .welcome-info{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 425px) {
+    .welcome-info{
+        gap: 110px;
+    }
+
+    .footer-icon{
+        height: 20px;
+        width: 80px;
+    }
+
+    .footer-create-date{
+        font-size: 7px;
+    }
+}
 
 
 @font-face {
