@@ -21,15 +21,23 @@ if (window.innerWidth <= 1024) {
 }
 
 
-const smoothLinks = document.querySelectorAll('a[href^="#"]');
-for (let smoothLink of smoothLinks) {
-  smoothLink.addEventListener('click', function (e) {
-    e.preventDefault();
-    const id = smoothLink.getAttribute('href');
+const smoothLinks = document.querySelectorAll('a[href*="#"]');
 
-    document.querySelector(id).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    })
+smoothLinks.forEach (smoothLink => {
+  smoothLink.addEventListener('click', function(event){
+    event.preventDefault();
+
+    const href = this.getAttribute('href').substring(1);
+
+    const hrefOffset = document.getElementById(href).offsetTop;
+
+    setTimeout(function(){
+
+      window.scrollBy({
+        top: hrefOffset,
+        behavior: 'smooth'
+      }); 
+
+    }, 500)       
   })
-}
+});
