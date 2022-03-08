@@ -634,10 +634,18 @@ a {
         width: 100%;
         max-width: none;
         margin-bottom: 30px;
+        font-size: 20px;
+        text-align: center;
     }
 
-    .welcome-right-subtitle{
-        text-align: center;
+    .welcome-right-info a{
+        height: auto;
+        width: auto;
+    }
+
+    .welcome-button{
+        height: 50px;
+        font-size: 20px;
     }
 
     .welcome-right-info a{
