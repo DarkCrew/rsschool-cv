@@ -472,14 +472,10 @@ a {
     background-image: url(../assets/svg/rs_school_js.svg);
 }
 
-.footer-create-date{
-    width: 200px;
-    font-size: 20px;
-    color: #000000;
-    font-family: "Roboto-Bold";
-    text-align: right;
-    text-transform: uppercase;
-    user-select: none;
+.created-in{
+    background-size: contain;
+    background-position: end;
+    background-image: url(../assets/img/created-in.png);
 }
 
 /*.....FOOTER-END.....*/
@@ -673,11 +669,6 @@ a {
         height: 30px;
         width: 120px;
     }
-
-    .footer-create-date{
-        width: auto;
-        font-size: 11px;
-    }
 }
 
 @media (max-width: 500px) {
@@ -708,9 +699,6 @@ a {
         width: 80px;
     }
 
-    .footer-create-date{
-        font-size: 7px;
-    }
 }
 
 
