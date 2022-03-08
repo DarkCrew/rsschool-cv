@@ -358,23 +358,10 @@ a {
     width: 100%;
 }
 
-.work-item{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    background: url(../assets/img/notebook.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center top;
-    width: 48%;
-    margin-bottom: 80px;
-    user-select: none;
-}
-
 .work-items{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 48%;
     margin-bottom: 80px;
 }
 
@@ -412,37 +399,6 @@ a {
     font-family: "Roboto-Bold";
     text-transform: uppercase;
     text-align: center;
-    font-size: 25px;
-    bottom: -10px;
-}
-
-.example-image{
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.example-image a{
-    display: flex;
-    justify-content: center;
-}
-
-.example-image img{
-    margin-top: 3%;
-    height: 77%;
-    width: 98%;
-    transition: 1s;
-    border-radius: 2%;
-}
-
-.example-image img:hover{
-    transform: scale(1.1);
-}
-
-.example-title{
-    position: absolute;
-    font-family: "Roboto-Bold";
-    text-transform: uppercase;
     font-size: 25px;
     bottom: -10px;
 }
@@ -581,7 +537,7 @@ a {
         width: 300px;
     }
 
-    .example-image img:hover{
+    .notebook-example-image img:hover{
         transform: scale(1);
     }
 
@@ -703,10 +659,6 @@ a {
     }
 
     .skill-item{
-        width: 100%;
-    }
-
-    .work-item{
         width: 100%;
     }
 
